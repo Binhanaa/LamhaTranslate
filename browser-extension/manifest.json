@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Lamha Translate — Instant Selection Translator",
+  "version": "1.1.0",
+  "description": "Lightweight instant translation for any text selected with mouse or trackpad, in-place or in an adaptive floating card.",
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://translate.googleapis.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Lamha Translate Settings"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+#lamha-trigger-badge {
+  position: fixed;
+  z-index: 2147483646;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #12141c;
+  border: 1.2px solid rgba(225, 29, 72, 0.55);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.32);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.16s cubic-bezier(0.2, 0.9, 0.3, 1.2), opacity 0.15s ease;
+  padding: 0;
+}
+
+#lamha-trigger-badge.lamha-light-surface {
+  background: #f7f8fa;
+  border-color: rgba(220, 38, 38, 0.55);
+}
+
+#lamha-trigger-badge:hover {
+  transform: scale(1.14);
+  border-color: rgba(225, 29, 72, 0.9);
+}
+
+#lamha-trigger-badge svg {
+  width: 15px;
+  height: 15px;
+  fill: #e11d48;
+}
+
+#lamha-popup-card {
+  position: fixed;
+  z-index: 2147483647;
+  min-width: 180px;
+  max-width: 420px;
+  border-radius: 14px;
+  background: rgba(18, 20, 28, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  overflow: hidden;
+}
+
+#lamha-popup-card.lamha-light-surface {
+  background: rgba(247, 248, 250, 0.96);
+  border: 1px solid rgba(15, 23, 42, 0.14);
+  color: #0f172a;
+}
+
+#lamha-popup-card.lamha-compact {
+  padding: 10px 14px;
+  border-radius: 12px;
+}
+
+.lamha-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.lamha-lang-pill {
+  font-size: 11px;
+  font-weight: 600;
+  color: #e11d48;
+  background: rgba(225, 29, 72, 0.14);
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
+.lamha-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lamha-icon-btn {
+  background: rgba(148, 163, 184, 0.16);
+  border: none;
+  color: inherit;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 11px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.14s ease;
+}
+
+.lamha-icon-btn:hover {
+  background: rgba(225, 29, 72, 0.25);
+}
+
+.lamha-body {
+  padding: 13px 16px;
+  line-height: 1.55;
+  word-wrap: break-word;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.lamha-dict {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(148, 163, 184, 0.16);
+  font-size: 12px;
+  opacity: 0.78;
+}
